@@ -3,15 +3,11 @@
 import Button from "@/app/components/Input/Button";
 import Input from "@/app/components/Input/Input";
 import { useCallback, useState } from "react";
-import {
-  FieldValue,
-  FieldValues,
-  SubmitHandler,
-  useForm,
-} from "react-hook-form";
+import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 
 import AuthSocialButton from "./AuthSocialButton";
 import { BsGithub, BsGoogle } from "react-icons/bs";
+import axios from "axios";
 type Variant = "LOGIN" | "REGISTER";
 
 const AuthForm = () => {
@@ -46,7 +42,7 @@ const AuthForm = () => {
     }
 
     if (variant === "REGISTER") {
-      //next-auth sign up
+      axios.post("api/register", data);
     }
   };
 
