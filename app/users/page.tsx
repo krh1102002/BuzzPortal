@@ -1,4 +1,4 @@
-import EmptyState from "@/app/components/Input/EmptyState";
+import EmptyState from "@/app/components/EmptyState";
 
 const Users = () => {
   return (

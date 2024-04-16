@@ -9,7 +9,7 @@ import toast from "react-hot-toast";
 import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Input from "@/app/components/Input/Input";
-import Button from "@/app/components/Input/Button";
+import Button from "@/app/components/Button";
 
 type Variant = "LOGIN" | "REGISTER";
 
